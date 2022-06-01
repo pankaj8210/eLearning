@@ -9,10 +9,10 @@ from django.contrib.auth.models import User
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField(
+    email = forms.CharField(
         widget=forms.TextInput(
             attrs={
-                "placeholder": "Username",
+                "placeholder": "Email",
                 "class": "form-control"
             }
         ))
@@ -25,36 +25,36 @@ class LoginForm(forms.Form):
         ))
 
 
-class SignUpForm(UserCreationForm):
-    name = forms.CharField(
-        widget=forms.TextInput(
-            attrs={
-                "placeholder": "Name",
-                "class": "form-control"
-            }
-        ))
-    email = forms.EmailField(
-        widget=forms.EmailInput(
-            attrs={
-                "placeholder": "Email",
-                "class": "form-control"
-            }
-        ))
-    number = forms.CharField(
-        widget=forms.PasswordInput(
-            attrs={
-                "placeholder": "Number",
-                "class": "form-control"
-            }
-        ))
-    module = forms.CharField(
-        widget=forms.PasswordInput(
-            attrs={
-                "placeholder": "Module select",
-                "class": "form-control"
-            }
-        ))
+# class SignUpForm(UserCreationForm):
+#     name = forms.CharField(
+#         widget=forms.TextInput(
+#             attrs={
+#                 "placeholder": "Name",
+#                 "class": "form-control"
+#             }
+#         ))
+#     email = forms.EmailField(
+#         widget=forms.EmailInput(
+#             attrs={
+#                 "placeholder": "Email",
+#                 "class": "form-control"
+#             }
+#         ))
+#     number = forms.CharField(
+#         widget=forms.PasswordInput(
+#             attrs={
+#                 "placeholder": "Number",
+#                 "class": "form-control"
+#             }
+#         ))
+#     module = forms.CharField(
+#         widget=forms.PasswordInput(
+#             attrs={
+#                 "placeholder": "Module select",
+#                 "class": "form-control"
+#             }
+#         ))
 
-    class Meta:
-        model = User
-        fields = ('username', 'email', 'number', 'module')
+#     class Meta:
+#         model = User
+#         fields = ('username', 'email', 'number', 'module')

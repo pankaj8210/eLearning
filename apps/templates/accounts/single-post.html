@@ -1,7 +1,7 @@
 <!DOCTYPE html>{% load static %}
 <html lang="en">
     <head>
-        <title>Bisylms - Education HTML5 Responsive Template</title>
+        <title>NeatSkills-Post</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
 
@@ -53,8 +53,8 @@
                         <nav class="navbar navbar-expand-lg">
                             <!-- logo Start-->
                             <a class="navbar-brand" href="index.html">
-                                <img src="{% static 'assets/images/logo4.png' %}" alt="">
-                                <img class="sticky-logo" src="{% static 'assets/images/logo4.png' %}" alt="">
+                                <img src="{% static 'assets/images/elearninglogo.png' %}" alt="">
+                                <img class="sticky-logo" src="{% static 'assets/images/elearninglogo.png' %}" alt="">
                             </a>
                             <!-- logo End-->
 
@@ -68,31 +68,34 @@
                             <div class="collapse navbar-collapse">
                                 <ul class="navbar-nav">
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="{% url 'index' %}">Home One</a></li>
+                                        <a href="{% url 'index' %}">Home</a>
+                                        <!--<a href="javascript:void(0);">Home</a>-->
+                                        <!--<ul class="sub-menu">-->
+                                        <!--    <li><a href="{% url 'index' %}">Home One</a></li>-->
                                             <!-- <li><a href="index-2.html">Home Two</a></li>
-                                            <li><a href="index-3.html">Home Three</a></li> -->
-                                        </ul>
+                                        <!--    <li><a href="index-3.html">Home Three</a></li> -->
+                                        <!--</ul>-->
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Courses</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="{% url 'course1'%}">Course 01</a></li>
-                                            <li><a href="{% url 'course2'%}">Course 02</a></li>
-                                            <li><a href="{% url 'course3'%}">Course 03</a></li>
-                                            <li><a href="{% url 'coursed'%}">Course Details</a></li>
-                                        </ul>
+                                        <a href="{% url 'course3'%}">Courses</a>
+                                        <!--<a href="javascript:void(0);">Courses</a>-->
+                                        <!--<ul class="sub-menu">-->
+                                        <!--    <li><a href="{% url 'course1'%}">Course 01</a></li>-->
+                                        <!--    <li><a href="{% url 'course2'%}">Course 02</a></li>-->
+                                        <!--    <li><a href="{% url 'course3'%}">Course 03</a></li>-->
+                                        <!--    <li><a href="{% url 'coursed'%}">Course Details</a></li>-->
+                                        <!--</ul>-->
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="javascript:void(0);">Pages</a>
                                         <ul class="sub-menu">
                                             <li class="menu-item-has-children">
-                                                <a href="javascript:void(0);">About Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="{% url 'about'%}">About 01</a></li>
-                                                    <li><a href="{% url 'about2'%}">About 02</a></li>
-                                                </ul>
+                                                <a href="{% url 'about'%}">About Us</a>
+                                            <!-- <ul class="sub-menu">
+                                                <li><a href="{% url 'about'%}">About Us</a></li> -->
+                                                <!-- <a href="javascript:void(0);">About Pages</a> -->
+                                                <!-- <li><a href="{% url 'about2'%}">About 02</a></li> -->
+                                            <!-- </ul> -->
                                             </li>
                                             <li><a href="{% url 'instructor'%}">Instructor Page</a></li>
                                         <li><a href="{% url 'instructorprofile'%}">Instructor Profile</a></li>
@@ -114,11 +117,12 @@
                             <!-- Nav Menu End -->
 
                             <!-- User Btn -->
-                            <a href="#" class="user-btn"><i class="ti-user"></i></a>
+                            <!--<a href="#" class="user-btn"><i class="ti-user"></i></a>-->
                             <!-- User Btn -->
 
                             <!-- Join Btn -->
-                            <a href="#" class="join-btn">Join for Free</a>
+                             <a href="{% url 'registration'%}" class="join-btn">Join for Free</a>
+                             <a href="{% url 'login' %}" class="join-btn">Login</a>
                             <!-- Join Btn -->
                         </nav>
                     </div>
@@ -134,7 +138,7 @@
                     <div class="col-lg-7">
                         <a class="post-cate" href="#">Education</a>
                         <h2 class="banner-title">
-                            Build a full web chat app From Scratch.
+                            Learn ERP - Microsoft Business Central From Scratch.
                         </h2>
                         <div class="bp-meta">
                             <a href="#"><i class="icon_clock_alt"></i>April 22, 2020</a>
@@ -143,7 +147,7 @@
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
         <!-- Banner End -->
 
         <!-- Blog Start -->
@@ -159,7 +163,7 @@
                                 <img src="{% static 'assets/images/single-post/1.jpg' %}" alt="">
                             </div>
                             <h4 class="article-title">
-                                Logotype Masterclass with Jessica Hische
+                                Logotype Masterclass with Rohit Mane
                             </h4>
                             <p>
                                 Lost the plot morish bleeder absolutely bladdered my lady chinwag that bleeding Eaton blag, cheeky bugger burke matie boy brown bread say pukka off his nut sloshed mufty, squiffy show off show off pick your nose and blow off brolly bite your arm off bloke bubble and squeak hotpot happy days. Old spiffing cras bugger blimey chancer me old mucker vagabond you mug, amongst absolutely bladdered spend a penny ruddy wellies he lost his bottle hanky panky up the kyver bender, give us a bell my good sir car boot pear shaped young delinquent victoria sponge tomfoolery. Lavatory knackered pukka chip shop a blinding shot cor blimey guvnor bodge blower, barmy faff about cheeky nice one at public school. Have it down the pub posh matie boy wind up hunky-dory, he lost his bottle the full monty bugger all mate cheeky bugger cras chancer, absolutely bladdered amongst tomfoolery pukka. Knackered
@@ -238,7 +242,7 @@
                                                     <p>
                                                         Oxford baking cakes dropped clanger fanny around vagabond amongst cor blimey guvnor.
                                                         Blatant matie boy say bugger all mate butty gormless
-                                                        lavatory twit bits and bobs pardon you daft ummm I'm telling. 
+                                                        lavatory twit bits and bobs pardon you daft ummm I'm telling.
                                                     </p>
                                                 </div>
                                                 <a class="comment-reply-link" href="#"><i class="arrow_back"></i>Reply</a>
@@ -292,13 +296,13 @@
                             <aside class="widget widget-categories">
                                 <h3 class="widget-title">Categories</h3>
                                 <ul>
-                                    <li><a href="#">Web Design</a><span>(24)</span></li>
-                                    <li><a href="#">Marketing</a><span>(15)</span></li>
-                                    <li><a href="#">Frontend</a><span>(8)</span></li>
-                                    <li><a href="#">IT & Software</a><span>(13)</span></li>
-                                    <li><a href="#">Photography</a><span>(4)</span></li>
-                                    <li><a href="#">Technology</a><span>(16)</span></li>
-                                    <li><a href="#">General</a><span>(12)</span></li>
+                                    <li><a href="#">Industrial Accounting</a><span>(24)</span></li>
+                                    <li><a href="#">ERP - Microsoft Business Central</a><span>(15)</span></li>
+                                    <li><a href="#">Taxations Laws</a><span>(8)</span></li>
+                                    <li><a href="#">Import & Export</a><span>(13)</span></li>
+                                    <li><a href="#">Speaking English</a><span>(4)</span></li>
+                                    <!--<li><a href="#">Technology</a><span>(16)</span></li>-->
+                                    <!--<li><a href="#">General</a><span>(12)</span></li>-->
                                 </ul>
                             </aside>
                             <aside class="widget widget-trend-post">
@@ -315,19 +319,19 @@
                                 </div>
                                 <div class="popular-post">
                                     <a href="single-post.html"><img src="{% static 'assets/images/blog/p3.jpg' %}" alt=""></a>
-                                    <h5><a href="single-post.html">Making music with Other people</a></h5>
+                                    <h5><a href="single-post.html">Speak English with Other people</a></h5>
                                     <span>April 12, 2020</span>
                                 </div>
                                 <div class="popular-post">
                                     <a href="single-post.html"><img src="{% static 'assets/images/blog/p4.jpg' %}" alt=""></a>
-                                    <h5><a href="single-post.html">Brush strokes energize Trees in paintings</a></h5>
+                                    <h5><a href="single-post.html">Brush strokes energize Taxations</a></h5>
                                     <span>July 4, 2020</span>
                                 </div>
                             </aside>
                             <aside class="widget">
                                  <h3 class="widget-title">Popular Tags</h3>
                                  <div class="tags">
-                                    <a href="#">Bisy LMS</a>
+                                    <a href="#">Live Classes</a>
                                     <a href="#">Design</a>
                                     <a href="#">General</a>
                                     <a href="#">Online</a>
@@ -353,9 +357,9 @@
                     <div class="col-lg-4 col-md-3">
                         <aside class="widget">
                             <div class="about-widget">
-                                <a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+                                <a href="index.html"><img src="{% static 'assets/images/elearninglogo.png' %}" alt=""></a>
                                 <p>
-                                    Lost the plot Richard you mug cup of tea knackered boot bender.
+                                    <!--Lost the plot Richard you mug cup of tea knackered boot bender.-->
                                 </p>
                                 <div class="ab-social">
                                     <a class="fac" href="#"><i class="social_facebook"></i></a>
@@ -410,7 +414,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="copyright">
-                            <p>© 2021 Copyright all Right Reserved Design by <a href="http://quomodosoft.com/">Quomodosoft</a></p>
+                            <p>© 2021 Copyright all Right Reserved Design by <a href="#">NeatSkills</a></p>
                         </div>
                     </div>
                 </div>

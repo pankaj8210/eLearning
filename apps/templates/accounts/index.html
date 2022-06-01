@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>eLearning - Home</title>
+    <title>NeatSkills -Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 
@@ -55,8 +55,8 @@
                     <nav class="navbar navbar-expand-lg">
                         <!-- logo Start-->
                         <a class="navbar-brand" href="index.html">
-<!--                            <img src="{% static 'assets/images/eLearning-logos.jpg'%}" alt="">-->
-<!--                            <img class="sticky-logo" src="{% static 'assets/images/eLearning-logos_transparent.png'%}" alt="">-->
+                            <img src="{% static 'assets/images/elearninglogo.png'%}" alt="">
+                            <img class="sticky-logo" src="{% static 'assets/images/elearninglogo.png'%}" alt="">
                         </a>
                         <!-- logo End-->
 
@@ -69,13 +69,13 @@
                         <div class="collapse navbar-collapse">
                             <ul class="navbar-nav">
                                 <li class="menu-item-has-children">
-                                    <a href="{% url 'index' %}">Home</a>
+                                    <li><a href="{% url 'index' %}">Home</a></li>
                                     <!-- <ul class="sub-menu">
                                         <li><a href="{% url 'index' %}">Home One</a></li> -->
                                         <!-- <a href="javascript:void(0);">Home</a> -->
                                         <!-- <li><a href="index-2.html">Home Two</a></li>
                                         <li><a href="index-3.html">Home Three</a></li> -->
-                                    <!-- </ul> -->
+                                     <!--</ul> -->
                                 </li>
                                 <li class="menu-item-has-children">
                                     <!-- <a href="javascript:void(0);">Courses</a> -->
@@ -122,7 +122,8 @@
                         <!-- User Btn -->
 
                         <!-- Join Btn -->
-                        <a href="#" class="join-btn">Join for Free</a>
+                        <a href="{% url 'registration'%}" class="join-btn">Join for Free</a>
+                        <a href="{% url 'login' %}" class="join-btn">Login</a>
                         <!-- Join Btn -->
                     </nav>
                 </div>
@@ -157,7 +158,7 @@
                         <p>
                             Our Instructors will prepare you to face practical challendes of the Business work and come closer to reality
                         </p>
-                        <a href="#" class="bisylms-btn">Ready to Get Started?</a>
+                        <a href="{% url 'registration'%}"class="bisylms-btn">Ready to Get Started?</a>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7">
@@ -433,7 +434,7 @@
                                 </div>
                                 <div class="author">
                                     <img src="{% static 'assets/images/home/course/author.png'%}" alt="">
-                                    <a href="#">Anthony</a>
+                                    <a href="#"></a>
                                 </div>
                                 <div class="fcf-bottom">
                                     <a href="#"><i class="icon_book_alt"></i>12 Lessons</a>
@@ -777,7 +778,7 @@
                     <div class="cta-wrapper">
                         <img src="{% static 'assets/images/home/2.png'%}" alt="">
                         <h3>You can be your own Guiding star with our help!</h3>
-                        <a href="#" class="bisylms-btn">Get Started Now</a>
+                        <a href="{% url 'registration'%}" class="bisylms-btn">Get Started Now</a>
                     </div>
                 </div>
             </div>
@@ -785,7 +786,7 @@
                 <div class="col-lg-4 col-md-3">
                     <aside class="widget">
                         <div class="about-widget">
-                            <!-- <a href="index.html"><img src="{% static 'assets/images/logo.png'%}" alt=""></a> -->
+                             <a href="index.html"><img src="{% static 'assets/images/elearninglogo.png'%}" alt=""></a>
                             <!-- <p>
                                 Lost the plot Richard you mug cup of tea knackered boot bender.
                             </p> -->

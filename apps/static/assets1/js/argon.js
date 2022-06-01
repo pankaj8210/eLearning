@@ -1086,3 +1086,162 @@ var Scrollbar = (function() {
 	}
 
 })();
+
+$(document).ready(function() {
+	$("#myButton").click(function() {
+	  $("#myButton").after('<input type="text" id="textInput" name="cchapters" class="form-control" >');
+	});
+  });
+
+
+  $(document).ready(function() {
+	$("#myButton1").click(function() {
+	  $("#myButton1").after('<input type="text" id="textInput" name="ctopics" class="form-control" >');
+	});
+  });
+
+  $(document).ready(function() {
+	$("#myButton2").click(function() {
+	  $("#myButton2").after('<input type="file" id="textInput" name="ctscreens" class="form-control" >');
+	});
+  });
+  $(document).ready(function() {
+	$('#bootstrapdatatable').DataTable({
+	  "aLengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+		"iDisplayLength": 10
+	   }
+	);
+} );
+
+$(document).on('click', '#del-course', function () {
+    var id = $(this).attr('data-id');
+swal({
+  title: "Are you sure?",
+  text: "Are you sure, you want to delete this Course",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+  $.ajax({
+                url: "/deletecourse",
+                type: "get",
+                data: {id: id},
+                success: function (res) {
+                    console.log(res);
+                    window.location.reload();
+                }
+            });
+
+  }
+});
+  });
+
+
+$(document).on('click', '#del-batch', function () {
+    var id = $(this).attr('data-id');
+swal({
+  title: "Are you sure?",
+  text: "Are you sure, you want to delete this Course",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+  $.ajax({
+                url: "/deletebatch",
+                type: "get",
+                data: {id: id},
+                success: function (res) {
+                    console.log(res);
+                    window.location.reload();
+                }
+            });
+
+  }
+});
+  });
+
+
+$(document).on('click', '#del-schedulecourse', function () {
+    var id = $(this).attr('data-id');
+swal({
+  title: "Are you sure?",
+  text: "Are you sure, you want to delete this Course",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+  $.ajax({
+                url: "/deleteschedulecourse",
+                type: "get",
+                data: {id: id},
+                success: function (res) {
+                    console.log(res);
+                    window.location.reload();
+                }
+            });
+
+  }
+});
+  });
+
+
+
+$(document).on('click', '#del-user', function () {
+    var id = $(this).attr('data-id');
+swal({
+  title: "Are you sure?",
+  text: "Are you sure, you want to delete this Course",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+  $.ajax({
+                url: "/userdelete",
+                type: "get",
+                data: {id: id},
+                success: function (res) {
+                    console.log(res);
+                    window.location.reload();
+                }
+            });
+
+  }
+});
+  });
+
+
+
+
+
+$(document).on('click', '#del-inst', function () {
+    var id = $(this).attr('data-id');
+swal({
+  title: "Are you sure?",
+  text: "Are you sure, you want to delete this Course",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+  $.ajax({
+                url: "/instdelete",
+                type: "get",
+                data: {id: id},
+                success: function (res) {
+                    console.log(res);
+                    window.location.reload();
+                }
+            });
+
+  }
+});
+  });

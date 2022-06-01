@@ -1,7 +1,7 @@
 <!DOCTYPE html>{% load static %}
 <html lang="en">
     <head>
-        <title>Bisylms - Education HTML5 Responsive Template</title>
+        <title>NeatSkills-Blog</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
 
@@ -53,8 +53,8 @@
                         <nav class="navbar navbar-expand-lg">
                             <!-- logo Start-->
                             <a class="navbar-brand" href="index.html">
-                                <img src="{% static 'assets/images/logo4.png' %}" alt="">
-                                <img class="sticky-logo" src="{% static 'assets/images/logo4.png' %}" alt="">
+                                <img src="{% static 'assets/images/elearninglogo.png' %}" alt="">
+                                <img class="sticky-logo" src="{% static 'assets/images/elearninglogo.png' %}" alt="">
                             </a>
                             <!-- logo End-->
 
@@ -68,31 +68,34 @@
                             <div class="collapse navbar-collapse">
                                 <ul class="navbar-nav">
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="{% url 'index' %}">Home One</a></li>
+                                        <a href="{% url 'index' %}">Home</a>
+                                        <!--<a href="javascript:void(0);">Home</a>-->
+                                        <!--<ul class="sub-menu">-->
+                                            <!--<li><a href="{% url 'index' %}">Home One</a></li>-->
                                             <!-- <li><a href="index-2.html">Home Two</a></li>
                                             <li><a href="index-3.html">Home Three</a></li> -->
-                                        </ul>
+                                        <!--</ul>-->
                                     </li>
                                     <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Courses</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="{% url 'course1'%}">Course 01</a></li>
-                                        <li><a href="{% url 'course2'%}">Course 02</a></li>
-                                        <li><a href="{% url 'course3'%}">Course 03</a></li>
-                                        <li><a href="{% url 'coursed'%}">Course Details</a></li>
-                                        </ul>
+                                        <a href="{% url 'course3'%}">Courses</a>
+                                        <!--<a href="javascript:void(0);">Courses</a>-->
+                                        <!--<ul class="sub-menu">-->
+                                        <!--    <li><a href="{% url 'course1'%}">Course 01</a></li>-->
+                                        <!--<li><a href="{% url 'course2'%}">Course 02</a></li>-->
+                                        <!--<li><a href="{% url 'course3'%}">Course 03</a></li>-->
+                                        <!--<li><a href="{% url 'coursed'%}">Course Details</a></li>-->
+                                        <!--</ul>-->
                                     </li>
                                     <li class="menu-item-has-children">
                                         <a href="javascript:void(0);">Pages</a>
                                         <ul class="sub-menu">
                                             <li class="menu-item-has-children">
-                                                <a href="javascript:void(0);">About Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="{% url 'about'%}">About 01</a></li>
-                                                    <li><a href="{% url 'about2'%}">About 02</a></li>
-                                                </ul>
+                                                <a href="{% url 'about'%}">About Us</a>
+                                                <!--<a href="javascript:void(0);">About Pages</a>-->
+                                                <!--<ul class="sub-menu">-->
+                                                <!--    <li><a href="{% url 'about'%}">About 01</a></li>-->
+                                                <!--    <li><a href="{% url 'about2'%}">About 02</a></li>-->
+                                                <!--</ul>-->
                                             </li>
                                             <li><a href="{% url 'instructor'%}">Instructor Page</a></li>
                                             <li><a href="{% url 'instructorprofile'%}">Instructor Profile</a></li>
@@ -114,11 +117,12 @@
                             <!-- Nav Menu End -->
 
                             <!-- User Btn -->
-                            <a href="#" class="user-btn"><i class="ti-user"></i></a>
+                            <!--<a href="#" class="user-btn"><i class="ti-user"></i></a>-->
                             <!-- User Btn -->
 
                             <!-- Join Btn -->
-                            <a href="#" class="join-btn">Join for Free</a>
+                             <a href="{% url 'registration'%}" class="join-btn">Join for Free</a>
+                             <a href="{% url 'login' %}" class="join-btn">Login</a>
                             <!-- Join Btn -->
                         </nav>
                     </div>
@@ -134,12 +138,12 @@
                     <div class="col-lg-12">
                         <h2 class="banner-title">Blog Grid</h2>
                         <div class="bread-crumbs">
-                            <a href="index.html">Home</a> <span></span> Blog Grid
+                            <!--<a href="index.html">Home</a> <span></span> Blog Grid-->
                         </div>
                     </div>
                 </div>
             </div>
-        </section>  
+        </section>
         <!-- Banner End -->
 
         <!-- Blog Start -->
@@ -156,7 +160,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>April 22, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>6 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Build A Full Web Chat App From Scratch.</a></h3>
+                                        <h3><a href="single-post.html">Learn Industrial Accounting From Scratch.</a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -169,7 +173,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>January 24, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>4 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Insights on How to Improve Your Teaching.</a></h3>
+                                        <h3><a href="single-post.html">How to Improve Your ERP - Microsoft Business Central.</a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -182,7 +186,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>July 13, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>2 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Brush Strokes Energize Trees In Paintings</a></h3>
+                                        <h3><a href="single-post.html">Brush Certification on Taxations Laws</a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -195,7 +199,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>March 12, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>2 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Learning Python for Data Analysis.</a></h3>
+                                        <h3><a href="single-post.html">Learning Certification on Import & Export.</a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -208,7 +212,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>Janu 26, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>3 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Logotype Masterclass with Jessica Hische</a></h3>
+                                        <h3><a href="single-post.html">Logotype Speaking English with Ms Banerjee</a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -221,7 +225,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>April 22, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>4 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Build A Full Web Chat App From Scratch.</a></h3>
+                                        <h3><a href="single-post.html"></a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -234,7 +238,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>Agust 12, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>2 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Learning Python for Data Analysis.</a></h3>
+                                        <h3><a href="single-post.html"></a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -247,7 +251,7 @@
                                             <a href="#"><i class="icon_clock_alt"></i>March 13, 2020</a>
                                             <a href="#"><i class="icon_chat_alt"></i>2 Comments</a>
                                         </div>
-                                        <h3><a href="single-post.html">Learning Python for Data Analysis.</a></h3>
+                                        <h3><a href="single-post.html"></a></h3>
                                         <a class="read-more" href="single-post.html">Read More<i class="arrow_right"></i></a>
                                     </div>
                                 </div>
@@ -274,13 +278,13 @@
                             <aside class="widget widget-categories">
                                 <h3 class="widget-title">Categories</h3>
                                 <ul>
-                                    <li><a href="#">Web Design</a><span>(24)</span></li>
-                                    <li><a href="#">Marketing</a><span>(15)</span></li>
-                                    <li><a href="#">Frontend</a><span>(8)</span></li>
-                                    <li><a href="#">IT & Software</a><span>(13)</span></li>
-                                    <li><a href="#">Photography</a><span>(4)</span></li>
-                                    <li><a href="#">Technology</a><span>(16)</span></li>
-                                    <li><a href="#">General</a><span>(12)</span></li>
+                                    <li><a href="#">Industrial Accounting</a><span>(24)</span></li>
+                                    <li><a href="#">ERP - Microsoft Business Central</a><span>(15)</span></li>
+                                    <li><a href="#">Taxations Laws</a><span>(8)</span></li>
+                                    <li><a href="#">Import & Export</a><span>(13)</span></li>
+                                    <li><a href="#">Speaking English</a><span>(4)</span></li>
+                                    <!--<li><a href="#">Technology</a><span>(16)</span></li>-->
+                                    <!--<li><a href="#">General</a><span>(12)</span></li>-->
                                 </ul>
                             </aside>
                             <aside class="widget widget-trend-post">
@@ -292,29 +296,29 @@
                                 </div>
                                 <div class="popular-post">
                                     <a href="single-post.html"><img src="{% static 'assets/images/blog/p2.jpg' %}" alt=""></a>
-                                    <h5><a href="single-post.html">Fundamentals of UI Design</a></h5>
+                                    <h5><a href="single-post.html">Fundamentals of Speaking English</a></h5>
                                     <span>Jan 14, 2020</span>
                                 </div>
                                 <div class="popular-post">
                                     <a href="single-post.html"><img src="{% static 'assets/images/blog/p3.jpg' %}" alt=""></a>
-                                    <h5><a href="single-post.html">Making music with Other people</a></h5>
+                                    <h5><a href="single-post.html">Import & Export fundamental with Other people</a></h5>
                                     <span>April 12, 2020</span>
                                 </div>
                                 <div class="popular-post">
                                     <a href="single-post.html"><img src="{% static 'assets/images/blog/p4.jpg' %}" alt=""></a>
-                                    <h5><a href="single-post.html">Brush strokes energize Trees in paintings</a></h5>
+                                    <h5><a href="single-post.html">Microsoft Business Central</a></h5>
                                     <span>July 4, 2020</span>
                                 </div>
                             </aside>
                             <aside class="widget">
                                  <h3 class="widget-title">Popular Tags</h3>
                                  <div class="tags">
-                                    <a href="#">Bisy LMS</a>
+                                    <a href="#">Live Classes</a>
                                     <a href="#">Design</a>
                                     <a href="#">General</a>
                                     <a href="#">Online</a>
                                     <a href="#">Prevention</a>
-                                    <a href="#">Artist</a>
+                                    <a href="#">Accounts</a>
                                     <a href="#">Education</a>
                                     <a href="#">Motivation</a>
                                     <a href="#">Politico</a>
@@ -335,9 +339,9 @@
                     <div class="col-lg-4 col-md-3">
                         <aside class="widget">
                             <div class="about-widget">
-                                <a href="index.html"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+                                <a href="index.html"><img src="{% static 'assets/images/elearninglogo.png' %}" alt=""></a>
                                 <p>
-                                    Lost the plot Richard you mug cup of tea knackered boot bender.
+                                    <!--Lost the plot Richard you mug cup of tea knackered boot bender.-->
                                 </p>
                                 <div class="ab-social">
                                     <a class="fac" href="#"><i class="social_facebook"></i></a>
@@ -392,7 +396,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="copyright">
-                            <p>© 2021 Copyright all Right Reserved Design by <a href="http://quomodosoft.com/">Quomodosoft</a></p>
+                            <p>© 2021 Copyright all Right Reserved Design by <a href="#">NeatSkills</a></p>
                         </div>
                     </div>
                 </div>
