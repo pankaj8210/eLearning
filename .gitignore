@@ -29,8 +29,7 @@ apps/static/assets1/node_modules
 apps/static/assets1/yarn.lock
 apps/static/assets1/.temp
 
-
 *.css linguist-detectable=false
 *.js linguist-detectable=true
-*.java linguist-detectable=false
+*.html linguist-detectable=false
 
