@@ -2,10 +2,10 @@
 
 The online eLearning platform is a web application that helps people learn and teach. It's easy to use and for both teachers and students. The eLearning system includes making sure people can sign up, enroll in courses, check content, and communicate with each other. 
 Key Features: 
-## Simple Interface: Designed for easy navigation and course management.
-## Course Creation: Tools for teachers to create, manage, and update courses effortlessly. 
-## Communication: Features for students and teachers to interact via messaging and discussions.
-## Flexibility: Allows students to learn at their own pace with access anytime, anywhere. 
+#### Simple Interface: Designed for easy navigation and course management.
+#### Course Creation: Tools for teachers to create, manage, and update courses effortlessly. 
+#### Communication: Features for students and teachers to interact via messaging and discussions.
+#### Flexibility: Allows students to learn at their own pace with access anytime, anywhere. 
 
 
 
