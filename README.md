@@ -9,9 +9,6 @@ Key Features:
 
 
 
-## Demo
-
-> To authenticate use the default credentials ***test / ApS12_ZZs8*** or create a new user on the **registration page**.
 
 
 <br />
